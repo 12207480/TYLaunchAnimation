@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0543A5D1C17014A009D374C /* TYLaunchBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0543A561C17014A009D374C /* TYLaunchBaseAnimation.m */; };
+		B0543A5E1C17014A009D374C /* TYLaunchFadeScaleAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0543A581C17014A009D374C /* TYLaunchFadeScaleAnimation.m */; };
+		B0543A5F1C17014A009D374C /* UIImage+TYLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0543A5A1C17014A009D374C /* UIImage+TYLaunchImage.m */; };
+		B0543A601C17014A009D374C /* UIView+TYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0543A5C1C17014A009D374C /* UIView+TYLaunchAnimation.m */; };
 		B0A2145D1C10633800C768E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2145C1C10633800C768E9 /* main.m */; };
 		B0A214601C10633800C768E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A2145F1C10633800C768E9 /* AppDelegate.m */; };
 		B0A214631C10633800C768E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A214621C10633800C768E9 /* ViewController.m */; };
@@ -16,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0543A541C17014A009D374C /* TYLaunchAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchAnimationProtocol.h; sourceTree = "<group>"; };
+		B0543A551C17014A009D374C /* TYLaunchBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchBaseAnimation.h; sourceTree = "<group>"; };
+		B0543A561C17014A009D374C /* TYLaunchBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLaunchBaseAnimation.m; sourceTree = "<group>"; };
+		B0543A571C17014A009D374C /* TYLaunchFadeScaleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLaunchFadeScaleAnimation.h; sourceTree = "<group>"; };
+		B0543A581C17014A009D374C /* TYLaunchFadeScaleAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLaunchFadeScaleAnimation.m; sourceTree = "<group>"; };
+		B0543A591C17014A009D374C /* UIImage+TYLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYLaunchImage.h"; sourceTree = "<group>"; };
+		B0543A5A1C17014A009D374C /* UIImage+TYLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYLaunchImage.m"; sourceTree = "<group>"; };
+		B0543A5B1C17014A009D374C /* UIView+TYLaunchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYLaunchAnimation.h"; sourceTree = "<group>"; };
+		B0543A5C1C17014A009D374C /* UIView+TYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYLaunchAnimation.m"; sourceTree = "<group>"; };
 		B0A214581C10633800C768E9 /* TYLaunchAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYLaunchAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A2145C1C10633800C768E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0A2145E1C10633800C768E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +52,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0543A531C17014A009D374C /* TYLaunchAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B0543A541C17014A009D374C /* TYLaunchAnimationProtocol.h */,
+				B0543A551C17014A009D374C /* TYLaunchBaseAnimation.h */,
+				B0543A561C17014A009D374C /* TYLaunchBaseAnimation.m */,
+				B0543A571C17014A009D374C /* TYLaunchFadeScaleAnimation.h */,
+				B0543A581C17014A009D374C /* TYLaunchFadeScaleAnimation.m */,
+				B0543A591C17014A009D374C /* UIImage+TYLaunchImage.h */,
+				B0543A5A1C17014A009D374C /* UIImage+TYLaunchImage.m */,
+				B0543A5B1C17014A009D374C /* UIView+TYLaunchAnimation.h */,
+				B0543A5C1C17014A009D374C /* UIView+TYLaunchAnimation.m */,
+			);
+			path = TYLaunchAnimation;
+			sourceTree = SOURCE_ROOT;
+		};
 		B0A2144F1C10633800C768E9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +87,7 @@
 		B0A2145A1C10633800C768E9 /* TYLaunchAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B0543A531C17014A009D374C /* TYLaunchAnimation */,
 				B0A2145E1C10633800C768E9 /* AppDelegate.h */,
 				B0A2145F1C10633800C768E9 /* AppDelegate.m */,
 				B0A214611C10633800C768E9 /* ViewController.h */,
@@ -150,9 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0543A5D1C17014A009D374C /* TYLaunchBaseAnimation.m in Sources */,
+				B0543A601C17014A009D374C /* UIView+TYLaunchAnimation.m in Sources */,
 				B0A214631C10633800C768E9 /* ViewController.m in Sources */,
 				B0A214601C10633800C768E9 /* AppDelegate.m in Sources */,
+				B0543A5F1C17014A009D374C /* UIImage+TYLaunchImage.m in Sources */,
 				B0A2145D1C10633800C768E9 /* main.m in Sources */,
+				B0543A5E1C17014A009D374C /* TYLaunchFadeScaleAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +229,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -214,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -264,10 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TYLaunchAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tanyang.TYLaunchAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -275,10 +314,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TYLaunchAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tanyang.TYLaunchAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -301,6 +344,7 @@
 				B0A214711C10633800C768E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

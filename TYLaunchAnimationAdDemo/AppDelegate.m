@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  TYLaunchAnimationDemo
+//  TYLaunchAnimationAdDemo
 //
-//  Created by tanyang on 15/12/3.
+//  Created by tanyang on 15/12/8.
 //  Copyright © 2015年 tanyang. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 #import "UIView+TYLaunchAnimation.h"
 #import "TYLaunchFadeScaleAnimation.h"
 #import "UIImage+TYLaunchImage.h"
+#import "TAdLaunchImageView.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +22,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    // FadeScaleAnimation
-    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage ty_getLaunchImage]];
-    [imageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeScaleAnimation] completion:^(BOOL finished) {
+    // Ad(广告) FadeAnimation
+    TAdLaunchImageView *adLaunchImageView = [[TAdLaunchImageView alloc]initWithImage:[UIImage ty_getLaunchImage]];
+    adLaunchImageView.URLString = @"http://img1.126.net/channel6/2015/020002/2.jpg?dpi=6401136";
+    
+    [adLaunchImageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeAnimationWithDelay:5.0] completion:^(BOOL finished) {
         NSLog(@"finished");
     }];
-    
     return YES;
 }
 

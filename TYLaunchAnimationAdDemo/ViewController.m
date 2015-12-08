@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  TYLaunchAnimationDemo
+//  TYLaunchAnimationAdDemo
 //
-//  Created by tanyang on 15/12/3.
+//  Created by tanyang on 15/12/8.
 //  Copyright © 2015年 tanyang. All rights reserved.
 //
 
@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
 }
 
 - (void)didReceiveMemoryWarning {
