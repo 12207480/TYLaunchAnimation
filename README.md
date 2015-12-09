@@ -5,6 +5,6 @@ launching image or view Animation,UIView Category,easy to use.
 
 ### screenshot
 
-![image][https://raw.githubusercontent.com/12207480/TYLaunchAnimation/master/screenshot/TYLanunchAnimaiton1.gif]
+![image](https://raw.githubusercontent.com/12207480/TYLaunchAnimation/master/screenshot/TYLanunchAnimaiton1.gif)
 
-![image][https://raw.githubusercontent.com/12207480/TYLaunchAnimation/master/screenshot/TYLanunchAnimaiton2.gif]
+![image](https://raw.githubusercontent.com/12207480/TYLaunchAnimation/master/screenshot/TYLanunchAnimaiton2.gif)
