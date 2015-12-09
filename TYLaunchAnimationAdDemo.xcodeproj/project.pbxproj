@@ -106,10 +106,10 @@
 				B0543A981C17072D009D374C /* TYLaunchBaseAnimation.m */,
 				B0543A991C17072D009D374C /* TYLaunchFadeScaleAnimation.h */,
 				B0543A9A1C17072D009D374C /* TYLaunchFadeScaleAnimation.m */,
-				B0543A9B1C17072D009D374C /* UIImage+TYLaunchImage.h */,
-				B0543A9C1C17072D009D374C /* UIImage+TYLaunchImage.m */,
 				B0543A9D1C17072D009D374C /* UIView+TYLaunchAnimation.h */,
 				B0543A9E1C17072D009D374C /* UIView+TYLaunchAnimation.m */,
+				B0543A9B1C17072D009D374C /* UIImage+TYLaunchImage.h */,
+				B0543A9C1C17072D009D374C /* UIImage+TYLaunchImage.m */,
 			);
 			path = TYLaunchAnimation;
 			sourceTree = SOURCE_ROOT;

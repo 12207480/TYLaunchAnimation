@@ -43,7 +43,7 @@
     _URLString = URLString;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 异步操作
-        // 从网络上 缓存图片
+        // 从网络上下载图片，只是个demo 并不建议这么做
         NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:URLString]];
         
         if (!data) {
