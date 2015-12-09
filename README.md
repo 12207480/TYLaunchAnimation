@@ -8,3 +8,6 @@ launching image or view Animation,UIView Category,easy to use.
 ![image](https://raw.githubusercontent.com/12207480/TYLaunchAnimation/master/screenshot/TYLanunchAnimaiton1.gif)
 <br>2.启动页动画<br>
 ![image](https://raw.githubusercontent.com/12207480/TYLaunchAnimation/master/screenshot/TYLanunchAnimaiton2.gif)
+
+
+demo launchimage 来源于网易，it之家app，仅供demo使用。
