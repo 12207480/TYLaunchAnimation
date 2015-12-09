@@ -1,7 +1,7 @@
 # TYLaunchAnimation
 launching image or view Animation,UIView Category,easy to use.
 
-启动图动画，带广告，封装成UIView分类，直接使用。
+启动图动画，带广告，封装成UIView分类，直接使用，支持自定义view，自定义动画。
 
 ### screenshot
 1.带广告启动页动画<br>
