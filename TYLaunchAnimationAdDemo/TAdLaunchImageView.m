@@ -19,6 +19,8 @@
     if (self = [super initWithFrame:frame]) {
         
         [self addAdImageView];
+        
+        [self addSingleTapGesture];
     }
     return self;
 }
@@ -26,7 +28,10 @@
 - (instancetype)initWithImage:(UIImage *)image
 {
     if (self = [super initWithImage:image]) {
+        
         [self addAdImageView];
+        
+        [self addSingleTapGesture];
     }
     return self;
 }
@@ -38,12 +43,19 @@
     _adImageView = imageView;
 }
 
+- (void)addSingleTapGesture
+{
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(singleTapGesture:)];
+    [self addGestureRecognizer:singleTap];
+}
+
+#pragma maek - setter
+
 - (void)setURLString:(NSString *)URLString
 {
     _URLString = URLString;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 异步操作
-        // 从网络上下载图片，只是个demo 并不建议这么做
         NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:URLString]];
         
         if (!data) {
@@ -65,11 +77,36 @@
     });
 }
 
+#pragma mark - action
+
+- (void)singleTapGesture:(UITapGestureRecognizer *)recognizer
+{
+    if (self.clickedImageURLHandle) {
+        self.clickedImageURLHandle(self.URLString);
+    }
+    if (self.superview) {
+        [self removeFromSuperview];
+    }
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if (self.hidden == NO && _adImageView.alpha > 0 && CGRectContainsPoint(_adImageView.frame, point)) {
+        return self;
+    }
+    return nil;
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     
     _adImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)*0.78);
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc");
 }
 
 /*

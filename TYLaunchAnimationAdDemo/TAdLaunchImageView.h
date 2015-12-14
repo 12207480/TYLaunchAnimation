@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSString *URLString;
 
+@property (nonatomic, copy) void (^clickedImageURLHandle)(NSString *URLString);
+
 @end

@@ -26,13 +26,36 @@
     TAdLaunchImageView *adLaunchImageView = [[TAdLaunchImageView alloc]initWithImage:[UIImage ty_getLaunchImage]];
     adLaunchImageView.URLString = @"http://img1.126.net/channel6/2015/020002/2.jpg?dpi=6401136";
     
+    // 显示imageView
     [adLaunchImageView showInWindowWithAnimation:[TYLaunchFadeScaleAnimation fadeAnimationWithDelay:5.0] completion:^(BOOL finished) {
     
         [[UIApplication sharedApplication] setStatusBarHidden:NO];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
         NSLog(@"finished");
     }];
+
+    __typeof (self) __weak weakSelf = self;
+    // 点击广告block
+    [adLaunchImageView setClickedImageURLHandle:^(NSString *URLString) {
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+        [weakSelf pushAdViewCntroller];
+        NSLog(@"clickedImageURLHandle");
+    }];
+    
     return YES;
+}
+
+- (void)pushAdViewCntroller
+{
+    // 获取到navVC
+    UITabBarController *tabbBarVC = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *navVC = tabbBarVC.viewControllers.firstObject;
+    
+    // 你要推出的VC
+    UIViewController *VC = [[UIViewController alloc]init];
+    VC.view.backgroundColor = [UIColor redColor];
+    [navVC pushViewController:VC animated:YES];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
