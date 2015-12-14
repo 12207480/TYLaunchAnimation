@@ -104,11 +104,6 @@
     _adImageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)*0.78);
 }
 
-- (void)dealloc
-{
-    NSLog(@"dealloc");
-}
-
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
